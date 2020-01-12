@@ -1,0 +1,81 @@
+header {
+  position: relative;
+  z-index: 2;
+  color: $dark-color;
+  max-width: 83.2%;
+  margin: 0 auto;
+  .header-wrapper-info {
+    background-color: $light-color;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    ul li {
+      display: inline-block;
+      margin-left: 3rem;
+      margin-bottom: 0;
+      font-size: 1.4rem;
+    }
+  }
+  .main-nav {
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+      li {
+        margin-left: 3rem;
+        &:last-child {
+          margin-right: 8rem;
+        }
+        a {
+          color: $light-color;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  background: {
+    image: linear-gradient(rgba($dark-color, 0.7), rgba($dark-color, 0.7)),
+      url(../images/banner.jpg);
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+  width: 100%;
+  height: 100vh;
+}
+
+.branding {
+  position: absolute;
+  top: 0;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $light-color;
+  text-align: center;
+  h1 {
+    font: {
+      size: 6rem;
+      family: $primary-font-xbold;
+    }
+    line-height: 1;
+    letter-spacing: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin: 1rem auto 3rem;
+    max-width: 60rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: $primary-font;
+  }
+  a {
+    @include btn($light-color);
+  }
+}

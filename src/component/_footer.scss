@@ -1,0 +1,38 @@
+footer {
+  background-color: $primary-color;
+  padding: 2rem 0;
+  color: $light-color;
+}
+.footer-box {
+  padding: 1.5rem;
+  img {
+    margin-right: 2rem;
+    width: 8rem;
+    height: 12rem;
+    object-fit: cover;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  a {
+    color: $light-color;
+  }
+  form {
+    input {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 1rem 2rem;
+      color: $light-color;
+      width: 100%;
+      text-align: center;
+      background: $secondary-color;
+    }
+  }
+}
