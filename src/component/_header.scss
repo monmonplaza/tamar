@@ -16,35 +16,123 @@ header {
       font-size: 1.4rem;
     }
   }
-  .main-nav {
-    nav ul {
-      display: flex;
-      justify-content: flex-end;
-      padding: 1rem;
-      li {
-        margin-left: 3rem;
-        &:last-child {
-          margin-right: 8rem;
-        }
-        a {
-          color: $light-color;
+}
+
+.toggle-menu {
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  z-index: 9999;
+  span {
+    position: relative;
+    width: 3rem;
+    height: 2px;
+    background: $light-color;
+    display: inline-block;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      content: "";
+      @extend span;
+      top: -0.8rem;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      @extend span;
+      top: 0.8rem;
+    }
+  }
+}
+
+.social-media {
+  position: absolute;
+  bottom: 10rem;
+  right: 15rem;
+  display: flex;
+  z-index: 3;
+  flex-direction: column;
+  li {
+    margin-bottom: 1rem;
+    a {
+      color: $light-color;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.main-menu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($primary-color, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  transition: top 1s ease;
+  #close-menu {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $light-color;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+      color: $secondary-color;
+    }
+    i {
+      transform: rotate(45deg);
+    }
+  }
+  nav {
+    padding: 1rem;
+    li {
+      text-align: center;
+      a {
+        font-size: 6rem;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        transition: 0.5s ease;
+        color: $light-color;
+        &:hover {
+          color: $secondary-color;
         }
       }
     }
   }
 }
 
+.open-nav {
+  top: 0;
+}
+
 .banner {
   position: relative;
-  background: {
-    image: linear-gradient(rgba($dark-color, 0.7), rgba($dark-color, 0.7)),
-      url(../images/banner.jpg);
-    size: cover;
-    position: center center;
-    repeat: no-repeat;
-  }
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-color, 0.7);
+    z-index: 1;
+  }
 }
 
 .branding {
@@ -54,27 +142,22 @@ header {
 
 .banner-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 8%;
+  transform: translateY(-50%);
   color: $light-color;
-  text-align: center;
+  z-index: 3;
   h1 {
     font: {
-      size: 6rem;
+      size: 10rem;
       family: $primary-font-xbold;
     }
     line-height: 1;
-    letter-spacing: 0.8rem;
     margin-bottom: 2rem;
-  }
-  p {
-    margin: 1rem auto 3rem;
-    max-width: 60rem;
-    font-size: 1.8rem;
     text-transform: capitalize;
-    font-family: $primary-font;
+    text-shadow: 2px 4px 10px rgba($dark-color, 0.2);
   }
+
   a {
     @include btn($light-color);
   }

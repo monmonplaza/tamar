@@ -5,4 +5,15 @@ $(document).ready(function() {
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
   });
+
+  const toggleMenu = document.querySelector(".toggle-menu");
+  const mainMenu = document.querySelector(".main-menu");
+  const closeMenu = document.querySelector("#close-menu ");
+  toggleMenu.addEventListener("click", () => {
+    mainMenu.classList.add("open-nav");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mainMenu.classList.remove("open-nav");
+  });
 });
