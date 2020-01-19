@@ -17,6 +17,14 @@ footer {
     letter-spacing: 2px;
     font-weight: bold;
   }
+  ul {
+    list-style: none;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+  }
 
   a {
     color: $light-color;
@@ -33,6 +41,28 @@ footer {
       width: 100%;
       text-align: center;
       background: $secondary-color;
+    }
+  }
+}
+.copyright {
+  background-color: darken($primary-color, 10);
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    color: $light-color;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-left: 2rem;
+      }
+    }
+    a {
+      color: $light-color;
     }
   }
 }

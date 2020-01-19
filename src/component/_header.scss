@@ -1,6 +1,6 @@
 header {
   position: relative;
-  z-index: 2;
+  z-index: 6;
   color: $dark-color;
   max-width: 83.2%;
   margin: 0 auto;
@@ -47,7 +47,7 @@ header {
 
 .social-media {
   position: absolute;
-  bottom: 10rem;
+  top: 70%;
   right: 15rem;
   display: flex;
   z-index: 3;
@@ -56,7 +56,7 @@ header {
     margin-bottom: 1rem;
     a {
       color: $light-color;
-      font-size: 1.4rem;
+      font-size: 2rem;
     }
   }
 }
@@ -71,8 +71,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 4;
-  transition: top 1s ease;
+  z-index: 8;
+  transition: top 0.5s ease;
   #close-menu {
     position: absolute;
     right: 2rem;
@@ -121,7 +121,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
   }
 
   .video-overlay {
@@ -129,7 +128,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba($primary-color, 0.7);
     z-index: 1;
   }
@@ -142,7 +141,7 @@ header {
 
 .banner-content {
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 8%;
   transform: translateY(-50%);
   color: $light-color;
@@ -160,5 +159,19 @@ header {
 
   a {
     @include btn($light-color);
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #bg-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #bg-video {
+    width: auto;
+    height: 100%;
   }
 }

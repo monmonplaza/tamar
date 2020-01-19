@@ -9,13 +9,16 @@
     }
   }
   .block-content {
-    ul li a {
-      @include block-content-a($primary-color);
+    ul {
+      margin-left: 2rem;
+      li a {
+        @include block-content-a($secondary-color);
+      }
     }
 
     .btn-book {
       margin-top: 3rem;
-      @include btn($primary-color);
+      @include btn($secondary-color);
     }
   }
 }
@@ -34,14 +37,21 @@
 
   .block-content {
     margin-left: 6rem;
-    ul li a {
-      @include block-content-a($secondary-color);
+    ul {
+      margin-left: 2rem;
+      li a {
+        @include block-content-a($secondary-color);
+      }
     }
     .btn-visit {
       margin-top: 3rem;
       @include btn($secondary-color);
     }
   }
+}
+
+.slider {
+  @include clearfix();
 }
 
 .other-services {
@@ -92,7 +102,7 @@
     &-overlay {
       position: absolute;
       z-index: 2;
-      background-color: rgba($primary-color, 0.9);
+      background-color: rgba(#0d3d58, 0.9);
       width: 100%;
       height: 100%;
       outline: 2px solid $light-color;
