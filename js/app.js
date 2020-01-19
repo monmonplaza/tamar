@@ -6,6 +6,24 @@ $(document).ready(function() {
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
   });
 
+  $(".slider-activities").responsiveSlides({
+    auto: true,
+    speed: 500,
+    pause: true
+  });
+
+  $(".slider-swiss").responsiveSlides({
+    auto: true,
+    speed: 500,
+    pause: true
+  });
+
+  $(".slider-accomodation").responsiveSlides({
+    auto: true,
+    speed: 500,
+    pause: true
+  });
+
   const toggleMenu = document.querySelector(".toggle-menu");
   const mainMenu = document.querySelector(".main-menu");
   const closeMenu = document.querySelector("#close-menu ");
