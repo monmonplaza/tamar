@@ -1,35 +1,21 @@
-.banner-sm {
-  height: 50vh;
-  width: 100%;
+.banner-page {
   background: {
-    image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 1) 20%,
-        rgba(255, 255, 255, 0.4)
-      ),
-      url("../img/costa_mesa__team_banner.jpg");
-    size: cover;
-    repeat: no-repeat;
-    position: center bottom;
+    image: linear-gradient(rgba($primary-color, 0.2), rgba($dark-color, 0.9)),
+      url(../images/banner-accomodation.jpg);
   }
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  box-shadow: inset -1px -2px 4px rgba(0, 0, 0, 0.2);
-  .banner-sm-wrapper {
-    color: $primary-color;
-    .welcome-span {
-      font-size: 3rem;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
-    h1 {
-      font-size: 5rem;
-      font-weight: bold;
-      color: $dark-color;
-      span {
-        color: $primary-color;
-      }
+  min-height: 70vh;
+  width: 100%;
+  .banner-content-page {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    h2 {
+      font-size: 8rem;
+      font-family: $primary-font-xbold;
+      line-height: 1;
+      color: $light-color;
+      text-transform: capitalize;
+      letter-spacing: 3px;
     }
   }
 }
