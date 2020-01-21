@@ -8,19 +8,19 @@ $(document).ready(function() {
 
   $(".slider-activities").responsiveSlides({
     auto: true,
-    speed: 500,
+    speed: 1500,
     pause: true
   });
 
   $(".slider-swiss").responsiveSlides({
     auto: true,
-    speed: 500,
+    speed: 1500,
     pause: true
   });
 
   $(".slider-accomodation").responsiveSlides({
     auto: true,
-    speed: 500,
+    speed: 1500,
     pause: true
   });
 
