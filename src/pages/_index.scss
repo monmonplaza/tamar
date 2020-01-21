@@ -5,7 +5,7 @@
       @include figure-img(55rem);
     }
     figcaption {
-      @include figure-caption(68%);
+      @include figure-caption(75%);
     }
   }
   .block-content {
@@ -30,7 +30,7 @@
       @include figure-img(55rem);
     }
     figcaption {
-      @include figure-caption(68%);
+      @include figure-caption(70%);
       left: 2rem;
     }
   }
@@ -179,18 +179,23 @@
     margin-bottom: 2rem;
     border: 1px solid $gray-color;
     min-height: 55rem;
+
     &-img {
       margin-bottom: 2rem;
       img {
         width: 100%;
-        min-height: 10rem;
+        height: 23rem;
         object-fit: cover;
         object-position: center center;
       }
     }
     &-content {
       padding: 1rem;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
       h3 {
+        font-size: 2.3rem;
         margin-bottom: 2rem;
         text-align: center;
       }

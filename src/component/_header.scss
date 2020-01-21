@@ -11,9 +11,12 @@ header {
     padding: 1rem;
     ul li {
       display: inline-block;
-      margin-left: 3rem;
+      margin-right: 2rem;
       margin-bottom: 0;
       font-size: 1.4rem;
+    }
+    p {
+      margin-right: 2rem;
     }
   }
 }
@@ -46,17 +49,16 @@ header {
 }
 
 .social-media {
-  position: absolute;
-  top: 70%;
-  right: 15rem;
+  margin-right: 1rem;
   display: flex;
-  z-index: 3;
-  flex-direction: column;
+  flex-direction: row;
+  p {
+    margin-bottom: 0;
+  }
   li {
-    margin-bottom: 1rem;
     a {
-      color: $light-color;
-      font-size: 2rem;
+      color: $dark-color;
+      font-size: 1.8rem;
     }
   }
 }

@@ -1,3 +1,15 @@
+@media screen and (max-width: 1025px) {
+  footer {
+    .footer-box {
+      flex-direction: column;
+      a,
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 840px) {
   header .header-wrapper-info {
     ul li {
