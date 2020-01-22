@@ -139,6 +139,10 @@
       ul {
         display: flex;
         justify-content: center;
+        li {
+          color: gold;
+          padding: 0 0.2rem;
+        }
       }
       img {
         display: block;
@@ -178,8 +182,11 @@
   .news-box {
     margin-bottom: 2rem;
     border: 1px solid $gray-color;
-    min-height: 55rem;
-
+    min-height: 56rem;
+    transition: 0.5s ease;
+    &:hover {
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.3);
+    }
     &-img {
       margin-bottom: 2rem;
       img {

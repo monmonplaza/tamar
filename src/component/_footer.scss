@@ -34,16 +34,23 @@ footer {
   }
   form {
     input {
-      width: 100%;
       padding: 1rem 2rem;
       margin-bottom: 2rem;
+      width: 75%;
+      border: none;
+      @include media-query(415px) {
+        width: 100%;
+      }
     }
     button {
-      padding: 1rem 2rem;
+      width: 20%;
+      padding: 1rem;
       color: $light-color;
-      width: 100%;
       text-align: center;
       background: $secondary-color;
+      @include media-query(415px) {
+        width: 100%;
+      }
     }
   }
 }

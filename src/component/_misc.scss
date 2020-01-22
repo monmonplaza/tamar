@@ -50,3 +50,35 @@
     text-transform: uppercase;
   }
 }
+
+.lower-book {
+  background: {
+    image: linear-gradient(rgba($dark-color, 0.7), rgba($dark-color, 0.7)),
+      url(../images/cta-lower.jpg);
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .lower-book-content {
+    text-align: center;
+    color: $light-color;
+    h2 {
+      font-size: 4rem;
+      line-height: 1.2;
+      letter-spacing: 2px;
+      font-family: $primary-font-xbold;
+      margin-bottom: 3rem;
+      @include media-query(415px) {
+        font-size: 2.9rem;
+        line-height: 1.4;
+      }
+    }
+    .btn-cta {
+      @include btn($light-color);
+    }
+  }
+}
