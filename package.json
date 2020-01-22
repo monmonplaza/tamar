@@ -16,7 +16,8 @@
     "url": "https://github.com/monmonplaza/tamar/issues"
   },
   "homepage": "https://github.com/monmonplaza/tamar#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "gh-pages": "^2.2.0"
   }
 }
