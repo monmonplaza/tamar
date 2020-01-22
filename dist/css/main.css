@@ -525,7 +525,7 @@ footer { background-color: #006ead; padding: 2rem 0; color: #ffffff; }
 
 .copyright-wrapper ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.copyright-wrapper ul li { margin-left: 2rem; }
+.copyright-wrapper ul li { margin-left: 2rem; margin-bottom: 0; }
 
 .copyright-wrapper a { color: #ffffff; }
 
