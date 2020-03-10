@@ -34,8 +34,4 @@ $(document).ready(function() {
   closeMenu.addEventListener("click", () => {
     mainMenu.classList.remove("open-nav");
   });
-
-  //WOW ACTIVATION
-
-  new WOW().init();
 });
