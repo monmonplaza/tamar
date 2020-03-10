@@ -19,6 +19,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   </head>
   <body>
     <div class="banner">
@@ -63,7 +65,7 @@
    
       <div class="main-menu ">
         <a id="close-menu"><i class="fas fa-plus"></i> close</a>
-        <nav>
+        <nav>  
           <ul>
             <li><a href="#">Accomodation</a>
                 <ul>
@@ -148,11 +150,15 @@
         </ul>
       </div>
 
+<<<<<<< HEAD
     
 
       <div class="banner-content  ">
+=======
+      <div class="banner-content wow slideInUp ">
+>>>>>>> 43e10b8b3ff4b2b3df8877f4cc842344153bd237
         <!-- <img src="./images/vector.png" alt="" /> -->
-        <h1>Tasmania's <br>most exclusive <br>and exotic suburb.</h1>
+        <h1 class="">Tasmania's <br>most exclusive <br>and exotic suburb.</h1>
         <!-- <p>
           Set on over numerous spectacular lakes with breathtaking views, the
           resort boasts World Class facilities in arguably Tasmania's most
@@ -169,9 +175,9 @@
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            <div class="block-content py-7 pr-7">
-              <h2  class="block-header">Accomodation</h2>
-              <p>
+            <div class="block-content py-7 pr-7 wow slideInUp" >
+              <h2  class="block-header " >Accomodation</h2>
+              <p >
                 The resort has a total of 97 rooms made up of Hotel Suites, 2
                 and 3 Bedroom Chalets, and Villas, and is sure to have the
                 perfect option to accommodation any type of business, leisure,
@@ -254,8 +260,8 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-1 bg-tertiary no-padding"></div>
-          <div class="col-md-5 no-padding order-2">
-            <div class="block-img bg-tertiary py-10">
+          <div class="col-md-5 no-padding order-2 bg-tertiary">
+            <div class="block-img  py-10">
               <div class="slider-swiss slider">
               <figure>
                 <img src="./images/index-swiss-1.jpg" alt="" />
@@ -319,7 +325,7 @@
           </div>
 
           <div class="col-md-5 order-1">
-            <div class="block-content py-7 pr-7">
+            <div class="block-content py-7 pr-7  wow slideInUp">
               <h2  class="block-header">Swiss Village</h2>
               <p>
                 The Swiss Village at Grindelwald is a wonderful location for a
@@ -378,7 +384,7 @@
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            <div class="block-content py-7 pr-7">
+            <div class="block-content py-7 pr-7 wow slideInUp">
               <h2  class="block-header">Activities</h2>
               <p>
                 Aspect Tamar Valley Resort has everything you need for a short
@@ -701,12 +707,18 @@
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <div class="row">
-              <div class="col-md-3">
-                <div class="footer-box ">
-                  <img src="./images/footer-logo.jpg" alt="" />
+              <div class="col-md-6">
+                <div class="footer-box clearfix">
+                  <img src="./images/footer-logo.jpg" alt="" class="float-left"/>
                   <p>
-                   Aspect Tamar Valley Resort is perfectly located 15 minutes drive north of Launceston, and is ideally positioned to use as a base whilst exploring all that Northern Tasmania has to offer.
+                    Set on over 150 magnificent acres amid numerous spectacular lakes with breathtaking views, the resort boasts World Class facilities in arguably Tasmania's most exclusive and exotic suburb. Aspect Tamar Valley Resort is perfectly located 15 minutes drive north of Launceston, and is ideally positioned to use as a base whilst exploring all that Northern Tasmania has to offer.
+
                   </p>
+                  <h3 >NewsLetter</h3>
+                  <form action="">
+                    <input type="email" placeholder="Enter Email" />
+                    <button>Subscribe </button>
+                  </form>
                 </div>
               </div>
 
@@ -744,16 +756,17 @@
                     </li>
 
                   </ul>
+                
                 </div>
               </div>
 
               <div class="col-md-3">
                 <div class="footer-box">
-                  <h3>NewsLetter</h3>
+                  <!-- <h3>NewsLetter</h3>
                   <form action="">
                     <input type="email" placeholder="Enter Email" />
                     <button>Subscribe Newsletter</button>
-                  </form>
+                  </form> -->
                 </div>
               </div>
             </div>
@@ -772,10 +785,9 @@
           <div class="copyright-wrapper">
             <p>©2020 Tamar Valley Resort</p>
             <ul>
+              <li>Follow Us: </li>
               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
           </div>
         </div>
@@ -786,6 +798,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="./js/responsiveslides.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
     <script src="./js/app.js"></script>
   </body>
 </html>
