@@ -71,7 +71,7 @@ header {
   height: 100vh;
   background-color: rgba($primary-color, 0.95);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 8;
   transition: top 0.5s ease;
@@ -93,19 +93,100 @@ header {
   }
   nav {
     padding: 1rem;
+    margin-left: 5rem;
     li {
-      text-align: center;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      &:hover > a {
+        color: $secondary-color;
+      }
       a {
-        font-size: 6rem;
+        font-size: 4.5rem;
         font-weight: bolder;
         letter-spacing: 3px;
         transition: 0.5s ease;
         color: $light-color;
-        &:hover {
-          color: $secondary-color;
+      }
+      ul {
+        display: flex;
+        padding-top: 2rem;
+        opacity: 0;
+        transition: 0.5s ease;
+        li {
+          margin-left: 2rem;
+          a {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              width: 0%;
+              height: 3px;
+              background-color: $secondary-color;
+              transition: ease 0.5s;
+            }
+          }
+        }
+      }
+      .link-blurb {
+        position: absolute;
+        right: 2rem;
+        bottom: 20vh;
+        width: 30vw;
+        padding: 0 2rem;
+        color: $light-color;
+        opacity: 0;
+
+        h3 {
+          text-transform: uppercase;
+        }
+        hr {
+          width: 95%;
+          margin-bottom: 2rem;
+          background-color: $secondary-color;
+          height: 2px;
         }
       }
     }
+  }
+}
+
+nav li:hover ul,
+nav li:hover .link-blurb {
+  animation: slide-up 0.5s linear;
+  opacity: 1;
+}
+
+nav li ul li a:hover::before {
+  width: 100%;
+}
+
+.social-media-menu {
+  position: absolute;
+  left: 5rem;
+  bottom: 2rem;
+  display: flex;
+  li {
+    margin-left: 2rem;
+    a {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  }
+}
+
+.contact-info-menu {
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+  display: flex;
+  li {
+    margin-right: 3rem;
+    color: $light-color;
   }
 }
 
