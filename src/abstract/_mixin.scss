@@ -58,6 +58,7 @@
   overflow: hidden;
   font-weight: bold;
   font-size: 1.1rem;
+  cursor: pointer;
   &:after {
     content: "";
     position: absolute;
@@ -104,8 +105,10 @@
   font-size: 1.5rem;
   outline: 1px solid $secondary-color;
   outline-offset: -1rem;
-  h2 {
+  h3 {
     color: $secondary-color;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(#f2f2f2, 0.1);
   }
 }
 
